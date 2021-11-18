@@ -1,0 +1,8 @@
+<pageContainer title="战绩查询">
+  <view class="searchBox">
+    <input />
+    <ui-button>查询</ui-button>
+    <image src="https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/Casablanca/31/46/Rank_14-1fd2cadd.svg"></image>
+  </view>
+  <navTab active="home"></navTab>
+</pageContainer>

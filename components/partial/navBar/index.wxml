@@ -1,0 +1,10 @@
+<!--components/fr-icon/index.wxml-->
+<view 
+  class="navBar contentLinear" 
+  style="height: {{ $systemInfo.navHeight}}px; padding-top: {{ $systemInfo.navTop }}px">
+    <view class="content flexCenter">
+      <view class="lefIcon">
+      </view>
+      <slot></slot>
+    </view>
+</view>

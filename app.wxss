@@ -1,0 +1,34 @@
+/**app.wxss**/
+/**
+* 初始化样式 
+**/
+page {
+  background: #F4F4F8;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+view {
+  box-sizing: border-box;
+}
+/**
+* 公用样式
+**/
+.contentLinear {
+  background: linear-gradient(to left, #6A7BFF, #929EFF);
+}
+.fontEllipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* flex 上下居中 */
+.flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* flex 上下居中 两端对齐 */
+.flexBetween {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

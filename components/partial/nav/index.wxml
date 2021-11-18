@@ -1,0 +1,10 @@
+<!--components/partial/nav/index.wxml-->
+<view class="pageBottomNav">
+  <view class="item {{active == item.icon && 'on'}}" wx:for="{{nav}}" data-item="{{item}}" data-index="{{index}}" bindtap="onClick" wx:key="icon">
+    <fr-icon wx:if="{{index != 1}}" type="nav-{{item.icon}}{{active == item.icon ? '-on' : ''}}" />
+    <view wx:else class="box">
+      <fr-icon type="nav-{{item.icon}}{{active == item.icon ? '-on' : ''}}" />
+    </view>
+    <text class="label">{{item.label}}</text>
+  </view>
+</view>

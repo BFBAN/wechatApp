@@ -1,0 +1,44 @@
+.fr-button {
+  border-radius: 8rpx;
+  position: relative;
+  font-size: 28rpx;
+  padding:  0 10px;
+  display: flex;
+  position: relative;
+  fr-icon {
+    margin-left: 24rpx;
+  }
+  button {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    width: 100%;
+  }
+}
+.primary {
+  color: #FFFFFF;
+  background: #6A7BFF;
+  border: 2rpx solid #6A7BFF;
+  &.plain {
+    border-color: #6A7BFF;
+    color: #6A7BFF;
+  }
+}
+.default {
+  color: #4D5EEA;
+  background: #DEE1FF;
+  border: 2rpx solid #DEE1FF;
+  &.plain {
+    color: #DEE1FF;
+  }
+}
+.plain {
+  background: none;
+}
+.disable {
+  background: #CBCBCB;
+  border-color: #CBCBCB;
+}

@@ -1,0 +1,1 @@
+<view bindtap="jump"><slot></slot></view>

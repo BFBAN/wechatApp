@@ -1,0 +1,7 @@
+<!--components/partial/pageContainer/index.wxml-->
+<view class="pageContainer" style="background-size: 100% {{ $systemInfo.navHeight }}px; padding-top: {{ $systemInfo.navHeight }}px">
+  <navBar showIcon="{{showIcon}}">{{title}}</navBar>
+  <view class="content">
+    <slot></slot>
+  </view>
+</view>

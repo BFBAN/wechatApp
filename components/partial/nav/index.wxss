@@ -1,0 +1,47 @@
+.pageBottomNav {
+  padding-bottom: env(safe-area-inset-bottom);
+  box-sizing: content-box;
+  height: 100rpx;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  box-shadow: 0 -4rpx 16rpx rgba(0, 0, 0, 0.04);
+  background: #fff;
+}
+.pageBottomNav .item {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.pageBottomNav .item fr-icon {
+  width: 48rpx;
+  height: 48rpx;
+}
+.pageBottomNav .item .label {
+  color: #999999;
+  margin-top: 4rpx;
+  font-size: 24rpx;
+  line-height: 28rpx;
+}
+.pageBottomNav .item .box {
+  width: 48rpx;
+  height: 48rpx;
+}
+.pageBottomNav .item .box fr-icon {
+  position: absolute;
+  top: -30rpx;
+  width: 94rpx;
+  height: 94rpx;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.pageBottomNav .item.on {
+  color: #6A7BFF;
+}

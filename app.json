@@ -1,0 +1,20 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/bulletin/index",
+    "pages/checkRecord/index"
+  ],
+  "usingComponents": {
+    "pageContainer": "./components/partial/pageContainer/",
+    "router-link": "./components/partial/routerLink/",
+    "navBar": "./components/partial/navBar/",
+    "ui-button": "./components/ui/ui-button"
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationStyle": "custom"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

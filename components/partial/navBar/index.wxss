@@ -1,0 +1,37 @@
+.navBar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  box-sizing: border-box;
+  z-index: 100;
+}
+.navBar .content {
+  height: 100%;
+  color: #FFFFFF;
+  font-size: 34rpx;
+  position: relative;
+}
+.navBar .content .lefIcon {
+  position: absolute;
+  left: 8px;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+}
+.navBar .content .lefIcon.font {
+  font-size: 28rpx;
+  color: #FFFFFF;
+}
+.navBar .content .lefIcon fr-icon {
+  font-size: 46rpx;
+}
+.navBar .content .lefIcon fr-icon.home {
+  margin-left: 8rpx;
+  font-size: 44rpx;
+}
+.navBar .content .lefIcon image {
+  height: 72rpx;
+  width: 164rpx;
+}

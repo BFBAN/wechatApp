@@ -1,0 +1,19 @@
+<!--components/ui/fr-button/index.wxml-->
+<view 
+  wx:if="{{ disabled }}"
+  catchtap="onClick"
+  class="fr-button flexCenter {{type}} styleclass {{ plain && 'plain' }} {{ disabled && 'disable'}}" 
+  style="height: {{ height }}rpx; border-radius: {{borderRadius}}rpx;">
+    <slot></slot>
+    <fr-icon wx-if="{{icon}}" type="{{icon}}" />
+    <button wx:if="{{openType}}" open-type="{{openType}}" disabled="{{disabled}}" bindgetphonenumber="bindgetphonenumber"></button>
+</view>
+<view
+  wx:else
+  bindtap="onClick"
+  class="fr-button flexCenter {{type}} styleclass {{ plain && 'plain' }} {{ disabled && 'disable'}}" 
+  style="height: {{ height }}rpx; border-radius: {{borderRadius}}rpx;">
+    <slot></slot>
+    <fr-icon wx-if="{{icon}}" type="{{icon}}" />
+    <button wx:if="{{openType}}" open-type="{{openType}}" disabled="{{disabled}}" show-message-card="true" bindgetphonenumber="bindgetphonenumber"></button>
+</view>
