@@ -1,14 +1,17 @@
 {
   "pages": [
+    "pages/checkRecord/index",
     "pages/index/index",
     "pages/bulletin/index",
-    "pages/checkRecord/index"
+    "pages/mine/index",
+    "pages/otherData/index"
   ],
   "usingComponents": {
     "pageContainer": "./components/partial/pageContainer/",
     "router-link": "./components/partial/routerLink/",
     "navBar": "./components/partial/navBar/",
-    "ui-button": "./components/ui/ui-button"
+    "ui-button": "./components/ui/ui-button",
+    "ui-tab": "./components/ui/ui-tab"
   },
   "window": {
     "backgroundTextStyle": "light",

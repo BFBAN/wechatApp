@@ -1,0 +1,35 @@
+.tab {
+  display: flex;
+  align-items: center;
+  color: #666666;
+  line-height: 40rpx;
+  padding: 0 20rpx;
+  font-size: 28rpx;
+}
+.tab.center {
+  justify-content: center;
+}
+.tab .item {
+  padding-bottom: 24rpx;
+  position: relative;
+  margin-right: 30rpx;
+}
+.tab .item:last-child {
+  margin-right: 0;
+}
+.tab .item .position {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 6rpx;
+  border-radius: 6rpx;
+  background: #6A7BFF;
+  display: none;
+  position: absolute;
+}
+.tab .item.on {
+  color: #4D5EEA;
+}
+.tab .item.on .position {
+  display: block;
+}

@@ -1,8 +1,36 @@
-.searchBox {
-  display: flex;
-  padding: 28rpx;
-  input {
-    flex: 1;
+.top {
+  height: 92rpx;
+  border-radius: 0 0 22rpx 22rpx;
+  position: relative;
+  margin-bottom: 50rpx;
+  .inputBox {
+    position: absolute;
     height: 100rpx;
+    top: 42rpx;
+    left: 40rpx;
+    right: 40rpx;
+    background: #fff;
+    border-radius: 16rpx;
+    padding-left: 24rpx;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 8rpx 20rpx rgba(0, 0, 0, 0.04);
+    .pickerBox {
+      margin-right: 20rpx;
+    }
+    input {
+      flex: 1;
+      height: 100%;
+      font-size: 32rpx;
+    }
+    .rightBox {
+      width: 120rpx;
+      height: 48rpx;
+      border-left: 1rpx solid #D8D8D8;
+      text-align: center;
+      font-size: 32rpx;
+      color: #4D5EEA;
+      line-height: 48rpx;
+    }
   }
 }

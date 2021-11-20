@@ -1,8 +1,16 @@
 <pageContainer title="战绩查询">
-  <view class="searchBox">
-    <input />
-    <ui-button>查询</ui-button>
-    <image src="https://eaassets-a.akamaihd.net/battlelog/battlebinary/gamedata/Casablanca/31/46/Rank_14-1fd2cadd.svg"></image>
-  </view>
+  <view class="top contentLinear">
+      <view class="inputBox">
+        <view class="pickerBox">
+          <picker mode="selector" value="{{ gameSelect }}" bindchange="gameChange" range="{{ gameType }}">{{ gameType[gameSelect] || '游戏类型'}}</picker>
+        </view>
+        <input 
+          model:value="{{playerName}}" 
+          placeholder="请输入橘子id" 
+          placeholder-style="color: #999999;"
+          bindconfirm="searchPlayer" />
+        <view class="rightBox" bindtap="searchPlayer">搜索</view>
+      </view>
+    </view>
   <navTab active="home"></navTab>
 </pageContainer>

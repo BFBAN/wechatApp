@@ -1,0 +1,7 @@
+<!--components/ui/ui-tab/index.wxml-->
+<view class="tab {{ align }}">
+  <view class="item {{ index == active && 'on' }}" wx:for="{{list}}" wx:key="item" data-index="{{index}}" bindtap="onChange">
+    {{item}}
+    <view class="position"></view>
+  </view>
+</view>

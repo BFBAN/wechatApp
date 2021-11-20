@@ -9,8 +9,13 @@
 
 export default [
   {
-    name: 'loading',
+    name: 'index',
     path: '/pages/index/index',
     mate: { title: '搜索用户页面' }
+  },
+  {
+    name: 'checkRecord',
+    path: '/pages/checkRecord/index',
+    mate: { title: '玩家数据页面' }
   }
 ]

@@ -12,9 +12,11 @@ const request = ({ url, gameType = "bfv", method = 'get', data}) => new Promise(
     loading = true
   }
   wx.request({
-    url: `${api[gameType]}${url}`, method, data, header, success: res => {
+    url: `${api.bash}${gameType}/${url}`, method, data: { ...data, lang: 'zh-cn'}, header, success: res => {
       const { statusCode, data } = res
+      resolve(res.data)
     },
+    header: { accept: 'application/json' },
     fail: err => {
       failToast()
       // promise 反馈失败

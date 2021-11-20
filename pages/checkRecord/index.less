@@ -1,0 +1,126 @@
+.checkRecord {
+  padding-top: 200rpx;
+  .top {
+    height: 148rpx;
+    width: 100%;
+    border-radius: 0 0 22rpx 22rpx;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    .topBox {
+      position: absolute;
+      top: 30rpx;
+      left: 30rpx;
+      right: 30rpx;
+      .doctor {
+        border-radius: 16rpx;
+        background: #fff;
+        .inforContent {
+          .name {
+            font-size: 32rpx;
+          }
+        }
+        .content {
+          padding: 24rpx 28rpx 26rpx;
+          display: flex;
+          align-items: center;
+          .image {
+            width: 100rpx;
+            height: 100rpx;
+            margin-right: 20rpx;
+            border-radius: 8rpx;
+          }
+          .inforContent {
+            flex: 1;
+            overflow: hidden;
+            .name {
+              font-size: 36rpx;
+              line-height: 50rpx;
+              margin-bottom: 4rpx;
+            }
+            .introduce {
+              font-size: 26rpx;
+              line-height: 40rpx;
+              color: #666666;
+              overflow : hidden;
+              text-overflow: ellipsis;
+              display: -webkit-box;
+              -webkit-line-clamp: 2;
+              -webkit-box-orient: vertical;
+            }
+          }
+        }
+      }
+    }
+  }
+  .main {
+    margin: 0 30rpx;
+    >.item {
+      background: #fff;
+      border-radius:  16rpx;
+      margin-bottom: 20rpx;
+      padding: 20rpx;
+      .title {
+        height: 40rpx;
+        margin-bottom: 20rpx;
+        font-weight: bold;
+        color: #666666;
+      }
+      .basic {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        >view {
+          width: 120rpx;
+        }
+        .basicItem {
+          width: 120rpx;
+          height: 120rpx;
+          background: #ECEEFF;
+          box-sizing: border-box;
+          color: #4D5EEA;
+          border-radius: 8rpx;
+          font-size: 26rpx;
+          margin-bottom: 12rpx;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          .num {
+            font-size: 24rpx;
+          }
+        }
+      }
+      &.classes {
+        color: #4D5EEA;
+        font-size: 32rpx;
+        font-weight: bold;
+        padding: 20rpx;
+      }
+      &.tabBox {
+        margin-top: 20rpx;
+        .list {
+          .item {
+            padding: 10px;
+            padding-bottom: 10rpx;
+            background: #ECEEFF;
+            border-radius: 8rpx;
+            margin-top: 20rpx;
+            font-size: 26rpx;
+            .itemInfo {
+              margin-top: 10rpx;
+              display: flex;
+              flex-wrap: wrap;
+              >view {
+                margin-bottom: 10rpx;
+                margin-right: 24rpx;
+                color: #343356;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
