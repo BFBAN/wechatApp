@@ -1,31 +1,18 @@
-// pages/otherData/index.js
+// pages/historyId/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    itemList: [{
-      label: '历史id',
-      route: 'historyId'
-    }, {
-      label: '代表战排',
-      route: 'team'
-    }, {
-      label: '加入战排',
-      route: 'team'
-    }],
-    player: {}
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    App.$api.getPlayerAll({ name: 'lin_RunRun' }).then(res => {
-      console.log(res)
-      this.setData({ player: res })
-    })
+
   },
 
   /**

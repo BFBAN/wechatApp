@@ -1,0 +1,4 @@
+<!--components/partial/contentLinearBox/index.vue.wxml-->
+<view class="contentLinearBox contentLinear">
+  <view class="slot"><slot></slot></view>
+</view>

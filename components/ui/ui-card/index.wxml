@@ -1,0 +1,4 @@
+<!--components/ui/fr-card/index.wxml-->
+<view class="fr-card styleclass">
+  <slot></slot>
+</view>

@@ -17,5 +17,20 @@ export default [
     name: 'checkRecord',
     path: '/pages/checkRecord/index',
     mate: { title: '玩家数据页面' }
+  },
+  {
+    name: 'otherData',
+    path: '/pages/otherData/index',
+    mate: { title: '其他数据页面' }
+  },
+  {
+    name: 'historyId',
+    path: '/pages/historyId/index',
+    mate: { title: '历史id' }
+  },
+  {
+    name: 'team',
+    path: '/pages/team/index',
+    mate: { title: '战排' }
   }
 ]

@@ -1,0 +1,10 @@
+.contentLinearBox {
+  padding-top: 20rpx;
+  background-size: 100% 60rpx;
+  background-repeat: no-repeat;
+}
+.contentLinearBox .slot {
+  border-radius: 32rpx 32rpx 0 0;
+  overflow: hidden;
+  background: #fff;
+}

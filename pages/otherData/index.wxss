@@ -1,1 +1,52 @@
-/* pages/otherData/index.wxss */
+.otherData {
+  background: #F4F4F8;
+  padding: 36rpx 40rpx;
+}
+.otherData .title {
+  color: #000000;
+  font-size: 36rpx;
+  margin-bottom: 32rpx;
+  line-height: 50rpx;
+  font-weight: bold;
+}
+.otherData .ui-card {
+  margin-bottom: 24rpx;
+}
+.otherData .ui-card .ui-cardBox {
+  display: flex;
+  padding: 0 28rpx;
+  height: 100rpx;
+  align-items: center;
+}
+.otherData .ui-card .ui-cardBox text {
+  flex: 1;
+  color: #4D5EEA;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+.otherData .classes {
+  padding: 20rpx;
+}
+.otherData .classes .title {
+  color: #4D5EEA;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+.otherData .classes .list .item {
+  padding: 10px;
+  padding-bottom: 10rpx;
+  background: #ECEEFF;
+  border-radius: 8rpx;
+  margin-top: 20rpx;
+  font-size: 26rpx;
+}
+.otherData .classes .list .item .itemInfo {
+  margin-top: 10rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+.otherData .classes .list .item .itemInfo > view {
+  margin-bottom: 10rpx;
+  margin-right: 24rpx;
+  color: #343356;
+}

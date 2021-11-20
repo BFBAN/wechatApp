@@ -1,23 +1,26 @@
 {
   "pages": [
+    "pages/otherData/index",
     "pages/checkRecord/index",
     "pages/index/index",
     "pages/bulletin/index",
     "pages/mine/index",
-    "pages/otherData/index"
+    "pages/historyId/index",
+    "pages/team/index"
   ],
   "usingComponents": {
     "pageContainer": "./components/partial/pageContainer/",
     "router-link": "./components/partial/routerLink/",
     "navBar": "./components/partial/navBar/",
     "ui-button": "./components/ui/ui-button",
-    "ui-tab": "./components/ui/ui-tab"
+    "ui-tab": "./components/ui/ui-tab",
+    "ui-card": "./components/ui/ui-card",
+    "van-icon": "@vant/weapp/icon/index"
   },
   "window": {
     "backgroundTextStyle": "light",
     "navigationStyle": "custom"
   },
-  "style": "v2",
   "sitemapLocation": "sitemap.json",
   "lazyCodeLoading": "requiredComponents"
 }

@@ -95,17 +95,11 @@
           </view>
         </view>
       </view>
-      <view wx:if="{{ false }}" class="item classes tabBox">
-        <view class="title">兵种数据</view>
-        <view class="list">
-          <view class="item" wx:for="{{ player.classes }}" wx:key="className">
-            <view class="name">{{ item.className }}</view>
-            <view class="itemInfo">
-              <view>击杀：{{ item.kills }}</view>
-              <view>kpm：{{ item.kpm }}</view>
-            </view>
-          </view>
-        </view>
+      <view class="item" style="margin-bottom: 40rpx;">
+        <router-link to="{{ { name: 'otherData', query: { userName: player.userName } } }}">
+          <view class="title" style="margin-bottom: 0;">其他数据</view>
+          <van-icon name="arrow" size="50px" />
+        </router-link>
       </view>
       <ui-tab model:active="{{ typeActive }}" align='center' list="{{ typeTab }}" />
       <view wx:if="{{ typeActive == 0 }}" class="item weapons tabBox">
